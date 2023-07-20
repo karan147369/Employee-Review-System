@@ -1,0 +1,34 @@
+header {
+  height: 50px;
+}
+#employeList {
+  width: 50%;
+  border: 1px solid black;
+  height: 550px;
+  margin: auto;
+}
+table th {
+  width: 25%;
+}
+#addNewEmp {
+  position: absolute;
+  width: 300px;
+  border: 1px solid black;
+  left: 20px;
+  height: 500px;
+}
+#addNewEmp input {
+  display: block;
+  width: 250px;
+  text-align: center;
+}
+#addNewEmp form input {
+  margin: auto;
+}
+select {
+  margin-left: 22px;
+}
+.pageCount {
+  position: relative;
+  top: 550px;
+}

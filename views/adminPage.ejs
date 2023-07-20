@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        Admin Page
+        <form action="/clear-cookie" method="GET">
+          <input type="submit" value="Logout" />
+        </form>
+      </header>
+      <hr />
+      <div id="addNewEmp">
+        <form action="" method="POST">
+          <input type="text" placeholder="Enter Name" />
+          <input type="text" placeholder="Enter Password" />
+          <select name="admin" id="">
+            <option value="False">False</option>
+            <option value="True">True</option>
+          </select>
+          <input type="submit" />
+        </form>
+      </div>
+      <div id="employeList">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Employee Number</th>
+              <!-- <th><input type="button" value="Update" /></th>
+              <th><input type="button" value="Delete" /></th> -->
+            </tr>
+          </thead>
+          <% for(let i of empList) {%>
+
+          <tr>
+            <td><%= i.username %></td>
+
+            <% if(i.admin) {%>
+            <td><%= i.admin %></td>
+            <td><input type="button" value="Update" /></td>
+
+            <% } else {%>
+
+            <td><%= i.admin %></td>
+            <td>
+              <input type="button" value="Update" />
+            </td>
+            <td>
+              <input type="button" value="Delete" />
+            </td>
+            <% }%>
+          </tr>
+          <% } %>
+        </table>
+        <div class="pageCount">
+          <input type="button" value="Next" />
+          <input type="button" value="Prev" />
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/admin.js"></script>
+  </body>
+</html>

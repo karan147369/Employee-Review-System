@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navbar">
+      heading
+      <hr />
+    </header>
+    <div class="container">
+      <span
+        style="
+          display: block;
+          margin: auto;
+          margin-top: 100px;
+          text-align: center;
+        "
+        >Login</span
+      >
+      <div class="loginForm">
+        <form action="/login" method="POST">
+          <table>
+            <tr>
+              <td>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  placeholder="Enter your Username"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Enter your Password"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="btn" type="submit" />
+              </td>
+            </tr>
+          </table>
+        </form>
+        <script type="text/javascript" src="/js/index.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
